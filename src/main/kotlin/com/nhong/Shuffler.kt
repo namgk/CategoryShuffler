@@ -7,11 +7,11 @@ class Shuffler {
     }
 
     companion object {
-        fun shuffle(list: MutableList<Shufflerable>): List<Shufflerable> {
+        fun <T: Shufflerable> shuffle(list: MutableList<T>): List<T> {
             val listLength = list.size
             val settledPositions = mutableListOf<Int>()
 
-            val categoryMap = mutableMapOf<String, MutableList<Shufflerable>>()
+            val categoryMap = mutableMapOf<String, MutableList<T>>()
 
             list.forEach {
                 if (categoryMap[it.getBaseProperty()].isNullOrEmpty()) {

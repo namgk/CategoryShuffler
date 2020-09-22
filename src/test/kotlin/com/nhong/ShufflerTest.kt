@@ -17,7 +17,7 @@ class ShufflerTest {
 
     @Test
     fun testShuffler() {
-        val list = mutableListOf<Shuffler.Shufflerable>()
+        val list = mutableListOf<Element>()
         val categories = mapOf("um" to 5, "hi" to 15, "cam" to 10)
 
         for (cat in categories){
