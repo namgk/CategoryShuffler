@@ -1,4 +1,5 @@
 package com.nhong
+import java.util.*
 import kotlin.math.ceil
 
 class Shuffler {
@@ -21,7 +22,9 @@ class Shuffler {
                 categoryMap[it.getBaseProperty()]!!.add(it)
             }
 
-            categoryMap.forEach {
+            val sortedCategorymap = categoryMap.toSortedMap(compareBy { categoryMap[it]!!.size })
+
+            sortedCategorymap.forEach {
                 val count = it.value.size
                 val spacing = ceil(list.size.toDouble() / count.toDouble()).toInt()
 

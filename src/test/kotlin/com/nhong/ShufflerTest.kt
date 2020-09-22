@@ -18,7 +18,7 @@ class ShufflerTest {
     @Test
     fun testShuffler() {
         val list = mutableListOf<Element>()
-        val categories = mapOf("um" to 5, "hi" to 15, "cam" to 10)
+        val categories = mapOf("hi" to 25, "cam" to 10, "um" to 5)
 
         for (cat in categories){
             val category = cat.key

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18e343c2-74d4-4a37-918c-fe2e6a8b9fad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/CategoryShuffler.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/nhong/Shuffler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/nhong/Shuffler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/nhong/ShufflerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/nhong/ShufflerTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,10 +118,27 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="ShufflerTest_testShuffler - 2020.09.21 at 20h 44m 05s.xml">
-      <configuration name="ShufflerTest.testShuffler" configurationId="GradleRunConfiguration" />
-    </history-entry>
+  <component name="WindowStateProjectService">
+    <state width="1780" height="333" key="GridCell.Tab.0.bottom" timestamp="1600752117495">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1780" height="333" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1600752117495" />
+    <state width="1780" height="333" key="GridCell.Tab.0.center" timestamp="1600752117494">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1780" height="333" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1600752117494" />
+    <state width="1780" height="333" key="GridCell.Tab.0.left" timestamp="1600752117494">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1780" height="333" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1600752117494" />
+    <state width="1780" height="333" key="GridCell.Tab.0.right" timestamp="1600752117495">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1780" height="333" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1600752117495" />
+    <state x="496" y="23" width="1005" height="1466" key="search.everywhere.popup" timestamp="1600751614560">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="496" y="23" width="1005" height="1466" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1600751614560" />
   </component>
   <component name="masterDetails">
     <states>
