@@ -12,6 +12,7 @@ class Shuffler {
             val listLength = list.size
             val settledPositions = mutableListOf<Int>()
 
+            // {cat1: [cat1ObjA, cat1ObjB, cat1ObjC], cat2: [cat2ObjA, cat2ObjB]}
             val categoryMap = mutableMapOf<String, MutableList<T>>()
 
             list.forEach {
@@ -22,13 +23,14 @@ class Shuffler {
                 categoryMap[it.getBaseProperty()]!!.add(it)
             }
 
-            val sortedCategorymap = categoryMap.toSortedMap(compareBy { categoryMap[it]!!.size })
-
+            // {cat2: [cat2ObjA, cat2ObjB], cat1: [cat1ObjA, cat1ObjB, cat1ObjC]}
+            val sortedCategorymap = categoryMap.toSortedMap(compareBy<String> { categoryMap[it]!!.size }.thenBy{it})
+            
             sortedCategorymap.forEach {
                 val count = it.value.size
                 val spacing = ceil(list.size.toDouble() / count.toDouble()).toInt()
 
-                // spreading it.value to list
+                // spreading it.value (e.g. [cat2ObjA, cat2ObjB]) to list
                 for (i in 0 until count) {
                     var nextPosition = i * spacing
                     if (nextPosition >= listLength || settledPositions.contains(nextPosition)) {

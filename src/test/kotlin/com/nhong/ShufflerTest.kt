@@ -1,6 +1,6 @@
 package com.nhong
 
-import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.*
 
 class ShufflerTest {
     class Element: Shuffler.Shufflerable{
@@ -18,7 +18,8 @@ class ShufflerTest {
     @Test
     fun testShuffler() {
         val list = mutableListOf<Element>()
-        val categories = mapOf("hi" to 25, "cam" to 10, "um" to 5)
+        // val categories = mapOf("hi" to 25, "cam" to 10, "um" to 5)
+        val categories = mapOf("umbracity" to 4, "test" to 2)
 
         for (cat in categories){
             val category = cat.key
@@ -34,6 +35,5 @@ class ShufflerTest {
         println(list)
         Shuffler.shuffle(list)
         println(list)
-
     }
 }
